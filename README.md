@@ -22,6 +22,12 @@ Nodejs Api Example
 * [Swagger](https://www.npmjs.com/package/express-oas-generator) 
 * [Boostrap](https://getbootstrap.com) - [Licence]( http://www.apache.org/licenses/LICENSE-2.0)
 
+### Installing
+```
+1- Git clone
+2- Run command `npm install`
+3- Run command `nodemon app.js`
+
 
 
 
