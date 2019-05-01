@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-//conect to Mongoose
 
-var databaseConnection =function(){
-     mongoose.connect('mongodb://localhost/bookstore',{ useNewUrlParser: true });
-     var db = mongoose.connection;
- }
+// conect to Mongoose
 
- module.exports = {
-	databaseConnection: databaseConnection
+const databaseConnection = () => {
+  mongoose.connect('mongodb://localhost/bookstore', { useNewUrlParser: true });
+};
+
+module.exports = {
+  databaseConnection,
 };
