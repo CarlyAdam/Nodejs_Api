@@ -20,6 +20,7 @@ var updateBook = function(id, book, options, callback) {
   var query = { _id: id };
   var update = {
     name: book.name,
+    price: book.price,
   };
   Book.findOneAndUpdate(query, update, options, callback);
 };

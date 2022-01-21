@@ -6,6 +6,10 @@ const bookSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  price: {
+    type: String,
+    required: true,
+  },
 });
 
 const Book = (module.exports = mongoose.model("Book", bookSchema));
