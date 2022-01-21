@@ -21,6 +21,7 @@ var updateBook = function(id, book, options, callback) {
   var update = {
     name: book.name,
     price: book.price,
+    barcode: book.barcode,
   };
   Book.findOneAndUpdate(query, update, options, callback);
 };

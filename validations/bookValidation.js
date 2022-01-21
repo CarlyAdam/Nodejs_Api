@@ -6,9 +6,13 @@ var validateBook = function validateBook(book) {
     name: Joi.string()
       .min(3)
       .required(),
-      
+
     price: Joi.string()
     .min(2)
+    .required(),
+
+    barcode: Joi.string()
+    .min(3)
     .required(),
   });
 

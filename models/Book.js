@@ -10,6 +10,10 @@ const bookSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  barcode: {
+    type: String,
+    required: true,
+  },
 });
 
 const Book = (module.exports = mongoose.model("Book", bookSchema));
