@@ -22,6 +22,6 @@ app.set("view engine", "html");
 
 app.use(bodyParser.json());
 app.use("/", index);
-app.use("/api/books", bookRouter);
+app.use("/api/products", bookRouter);
 
 //GET Books Request
