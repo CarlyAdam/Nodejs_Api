@@ -30,7 +30,7 @@ router.post('/', (req, res, next) => {
 
   bookController.addBook(book, (err, book) => {
     if (err) return res.status(400).send(err.message);
-    res.json(book, req.params.name);
+    res.json(book, req.params.name, req.params.price);
     return next();
   });
 });
