@@ -19,6 +19,7 @@ app.listen(serverConfig(), () => console.log(`Listening port 3000`));
 app.set("views", path.join(__dirname, "views"));
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
+app.set('etag', 'strong');  
 
 app.use(bodyParser.json());
 app.use("/", index);
