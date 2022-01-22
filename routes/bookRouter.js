@@ -8,6 +8,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
   bookController.getBooks((err, books) => {
     if (err) return res.status(400).send(err.details[0].message);
+    res.append('Last-Modified', (new Date(lastModifiedStringDate)).toUTCString());
     res.json(books);
   });
 });
